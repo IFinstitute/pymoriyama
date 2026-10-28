@@ -2,12 +2,6 @@
 # Export commonly used functions/classes so users can import them from
 # `import ttt_research` or `from ttt_research import ...`.
 
-from .file_path import cfg, mpl_style, root_dir
-from .io.gaia import GAIAnc
-from .io.hm_io import (
-	read_hm_nc,
-	read_hm_pkl,
-)
 from .plotting.colors import (
 	cmap_blue,
 	oklch_to_hex,
@@ -65,24 +59,19 @@ from .timeutils.solstice import (
 
 __all__ = [
 	"D2_sparse",
-	# gaia
-	"GAIAnc",
 	"add_color_axis",
 	"add_subplot_labels",
 	"calc_correration",
 	"calc_linear_fit",
-	"cfg",
 	"cmap_blue",
 	"compute_coi",
 	"compute_coi_stockwell",
-	# wavelet / stats
 	"compute_cwt",
 	"compute_periodic_averages",
 	"days_since_solstice",
 	"days_since_summer",
 	"days_since_winter",
 	"deg2dms",
-	# map / plotting
 	"dms2deg",
 	"fast_s_transform",
 	"grid_collection",
@@ -92,25 +81,15 @@ __all__ = [
 	"moving_standardization",
 	"moving_std",
 	"moving_std_fast",
-	"mpl_style",
-	# tool
 	"nanerror",
-	# colors
 	"oklch_to_hex",
 	"path_settings",
 	"read_grid_text",
-	# utils / io
-	"read_hm_nc",
-	"read_hm_pkl",
-	# paths
-	"root_dir",
 	"running_error",
-	# running / stats
 	"running_mean",
 	"save_plot_image",
 	"stream_running_error",
 	"stream_running_mean",
-	# solstice / timeutils
 	"summer_solstice_dates",
 	"ud_accent",
 	"ud_base",
